@@ -1,0 +1,131 @@
+:root {
+  --fondo: #EDE7DA;
+  --papel: #F7F4EC;
+  --tinta: #1F2A24;
+  --tenue: #5B6660;
+  --linea: #D8D0C0;
+  --verde: #2F6B34;
+  --verde-claro: #8FC65C;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #14181A;
+    --papel: #1C2224;
+    --tinta: #E7ECE8;
+    --tenue: #A0AAA5;
+    --linea: #2C3538;
+    --verde: #8FC65C;
+    --verde-claro: #8FC65C;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--tinta);
+  font: 17px/1.65 ui-serif, Georgia, "Times New Roman", serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+.cabecera {
+  padding: 2.5rem 1.5rem 1.5rem;
+  border-bottom: 1px solid var(--linea);
+  text-align: left;
+}
+
+.cabecera.portada { padding-bottom: 2.5rem; }
+
+.marca {
+  display: inline-block;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--tinta);
+  text-decoration: none;
+}
+
+.marca.grande { font-size: 3rem; }
+
+.lema {
+  margin: 0.15rem 0 0;
+  color: var(--tenue);
+  font-size: 1rem;
+}
+
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+h1 {
+  font-size: 1.9rem;
+  line-height: 1.25;
+  margin: 0 0 0.25rem;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 2.2rem 0 0.6rem;
+  letter-spacing: -0.01em;
+}
+
+p { margin: 0 0 1rem; }
+
+.fecha {
+  color: var(--tenue);
+  font-size: 0.95rem;
+  margin-bottom: 1.8rem;
+}
+
+.entrada {
+  font-size: 1.15rem;
+  color: var(--tenue);
+}
+
+ul {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+}
+
+li { margin-bottom: 0.55rem; }
+
+a { color: var(--verde); }
+
+a:hover { text-decoration: none; }
+
+.enlaces {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+}
+
+.boton {
+  display: inline-block;
+  padding: 0.7rem 1.1rem;
+  background: var(--papel);
+  border: 1px solid var(--linea);
+  border-radius: 0.6rem;
+  color: var(--tinta);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.boton:hover { border-color: var(--verde); }
+
+footer {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-top: 1px solid var(--linea);
+  color: var(--tenue);
+  font-size: 0.95rem;
+}
+
+footer a { color: var(--tenue); }

@@ -14,40 +14,60 @@
 
 <main>
 <h1>Política de privacidad</h1>
-<p class="fecha">Última actualización: 11 de septiembre de 2026</p>
+<p class="fecha">Última actualización: 16 de septiembre de 2026</p>
 
 <p>Deily es un cuaderno personal: tareas, agenda, notas, materias, hábitos,
-alimentación, tiempo y dinero. Esta página dice exactamente qué guarda la
-aplicación, dónde lo guarda y qué no sale nunca de tu teléfono.</p>
+alimentación, tiempo, dinero, una mascota y, si quieres, un espacio para dos
+(Juntos) y un asistente de inteligencia artificial. Esta página dice qué guarda
+la aplicación, dónde lo guarda, quién puede verlo y qué no sale de tu teléfono.
+Es la política enlazada desde Google Play y, cuando exista, desde el App
+Store.</p>
 
 <h2>Quién responde por esto</h2>
-<p>Deily lo desarrolla y lo mantiene una persona, no una empresa. Para
-cualquier cosa relacionada con tus datos, incluido pedir que se borren, escribe
-a <a href="mailto:app.organizacion123@gmail.com">app.organizacion123@gmail.com</a>.</p>
+<p>Deily lo desarrolla y lo mantiene una persona, no una empresa. El responsable
+de tus datos es esa persona. Para cualquier cosa relacionada con ellos, incluido
+pedir que se borren, escribe a
+<a href="mailto:app.organizacion123@gmail.com">app.organizacion123@gmail.com</a>
+o usa la <a href="https://apporganizacion.github.io/deily-legal/borrar.html">página
+para pedir el borrado de la cuenta</a>.</p>
 
-<h2>Qué datos se guardan</h2>
-<p>Dos cosas, y nada más:</p>
+<h2>Qué datos se guardan en el servidor</h2>
+<p>Cuando entras con tu cuenta de Google, el servidor de Deily guarda esto:</p>
 <ul>
-  <li><strong>Tu correo y tu nombre de la cuenta de Google.</strong> Llegan al
-  entrar con Google y sirven para identificar la cuenta y para que lo que anotas
-  en un aparato aparezca en el otro.</li>
+  <li><strong>Tu correo y tu nombre de la cuenta de Google.</strong> Sirven para
+  identificar la cuenta y para que lo que anotas en un aparato aparezca en el
+  otro. Deily nunca ve ni guarda tu contraseña de Google.</li>
   <li><strong>Lo que tú anotas en la aplicación.</strong> Tareas, proyectos,
-  empresas, notas, eventos de la agenda, hábitos y sus marcas, movimientos de
-  dinero, registros de tiempo y de pomodoro, metas, etiquetas, materias y sus
-  entregas, comidas, alimentos, agua, ejercicio y el estado de tu mascota.</li>
+  empresas, notas (el texto), eventos de la agenda, hábitos y sus marcas,
+  movimientos de dinero, registros de tiempo y de pomodoro, metas, etiquetas,
+  materias y sus entregas, comidas, alimentos, agua, ejercicio y el estado de tu
+  mascota.</li>
+  <li><strong>Lo que decides compartir en Juntos</strong>, y sólo mientras lo
+  compartes. Se explica más abajo.</li>
+  <li><strong>Tus conversaciones con el Asistente</strong>, si lo usas: tus
+  preguntas, un resumen de las áreas que eliges compartir en esa pregunta, y las
+  respuestas, para que tengas el historial.</li>
+  <li><strong>Tu plan</strong> (gratis, Pro o Lifetime) y si tienes el asistente
+  de pago. Eso lo confirma el servidor a partir de la compra en la tienda, no a
+  partir de datos de tu tarjeta.</li>
 </ul>
-<p>Deily <strong>no pide</strong> tu número de teléfono, ni tu dirección, ni
-datos de tarjeta, ni contactos, ni ubicación.</p>
+<p>Deily <strong>no pide</strong> tu número de teléfono, ni tu dirección postal,
+ni datos de tarjeta, ni tus contactos, ni tu ubicación.</p>
 
 <h2>Qué no sale del teléfono</h2>
-<p>Hay partes de la aplicación que funcionan sin mandar nada a ningún servidor:</p>
 <ul>
-  <li><strong>Los archivos que adjuntas a las notas</strong>, como los PDF. Viven
-  sólo en el almacenamiento del teléfono. Si desinstalas la aplicación o cambias
-  de aparato, se pierden: no hay copia en el servidor.</li>
-  <li><strong>La cámara.</strong> Se usa para escanear códigos de barras de
-  productos. Ninguna foto se guarda ni se envía; lo único que sale del escáner es
-  el número del código.</li>
+  <li><strong>Los archivos que adjuntas a las notas</strong>, como los PDF y los
+  dibujos sobre ellos. Viven sólo en el almacenamiento del teléfono. Si
+  desinstalas la aplicación o cambias de aparato, se pierden: no hay copia en el
+  servidor.</li>
+  <li><strong>La cámara, cuando escaneas un código.</strong> El código de barras
+  se lee en el teléfono. Esa imagen no se guarda ni se envía; lo único que sale
+  del escáner es el número del código. Con ese número se busca el producto en un
+  diccionario local, en el catálogo público de un supermercado de Costa Rica
+  (Walmart, Maxi Palí o Más x Menos) y en Open Food Facts, para ponerle nombre,
+  precio o nutrientes. Esa búsqueda no lleva tu nombre, tu correo ni tu cuenta.
+  El lector de códigos de Google (ML Kit) puede descargarse una vez en el
+  teléfono para funcionar después sin red.</li>
   <li><strong>Qué aplicación tienes abierta.</strong> El modo enfoque mira la
   aplicación que está en primer plano para poder bloquear las distracciones
   mientras dura la sesión. Esa lectura ocurre en el teléfono, en el momento, y no
@@ -55,46 +75,166 @@ datos de tarjeta, ni contactos, ni ubicación.</p>
   <li><strong>Tu calendario del teléfono.</strong> Si activas la copia de la
   agenda, Deily <em>escribe</em> sus propios eventos en tu calendario. No lee ni
   copia los eventos que ya tenías.</li>
-  <li><strong>Tus preferencias de presentación</strong>, como el tema o qué
-  bloques ves al abrir.</li>
+  <li><strong>Tus preferencias de presentación</strong>, como el tema, el idioma
+  o qué bloques ves al abrir.</li>
 </ul>
 
-<h2>Dónde se guarda lo que sí se sincroniza</h2>
-<p>En una base de datos alojada en <strong>Supabase</strong>, cifrada y protegida
-por reglas de acceso por fila: cada cuenta sólo puede leer y escribir lo suyo, y
-esa regla la aplica el servidor, no la aplicación. Supabase actúa como proveedor
-de infraestructura y no usa tus datos para nada propio.</p>
-<p>Entrar con Google lo gestiona <strong>Google</strong>. Deily recibe de ahí tu
-correo y tu nombre, nada más. Nunca ve ni guarda tu contraseña de Google.</p>
+<h2>Juntos: lo que ve la otra persona</h2>
+<p>Juntos sirve para compartir partes de tu día con una persona que tú invitas.
+Todo empieza apagado: lo que no enciendes, no se comparte. Cada cosa se enciende
+por separado en Juntos → Lo que compartimos, y ahí mismo ves, antes de aceptar,
+lo que va a ver la otra persona.</p>
+<p>Al vincularse, la otra persona ve el nombre con que te presentas (tu correo
+no), tu mascota y su cuarto, y lo que hacen juntos dentro de Juntos: los gestos,
+los juegos, el duelo de la semana y los intercambios. Si marcas hojas del
+cuaderno para compartirlas, ve esas hojas con su texto entero. Lo demás depende
+del nivel que elijas en cada ámbito:</p>
+<ul>
+  <li><strong>Agua.</strong> Si llegaste a tu meta del día, sí o no. No ve
+  cuántos vasos ni a qué hora.</li>
+  <li><strong>Hábitos.</strong> Cuántos hábitos cumpliste hoy y cuántos tenías.
+  No ve cuáles son ni cómo se llaman.</li>
+  <li><strong>Tareas.</strong> En el primer nivel, cuántas te quedan y cuántas
+  cerraste hoy. En el segundo, además, el título de cada tarea, para cuándo es y
+  si está hecha; nunca la nota, el proyecto, la empresa, la prioridad ni las
+  subtareas. Las tareas que escondes no se comparten.</li>
+  <li><strong>Metas de dinero.</strong> Cómo se llaman tus metas y cuánto llevas
+  de cada una. Nunca un movimiento, ni cuánto entra, sale o tienes.</li>
+</ul>
+<p><strong>Cómo se guarda.</strong> Lo que compartes se guarda en el servidor de
+Deily sólo mientras está encendido, para que llegue al teléfono de la otra
+persona.</p>
+<p><strong>Apagarlo.</strong> Se apaga en la misma pantalla, cuando quieras,
+ámbito por ámbito o todo de una vez con «Dejar de compartir todo». Al apagar, lo
+publicado de ese ámbito se borra del servidor en ese momento, y la copia en el
+teléfono de la otra persona se borra la próxima vez que su aplicación se
+conecte. Si cortas el vínculo, se borra del servidor todo lo que se compartían,
+en las dos direcciones. Lo que ya vio, ya lo vio: si tomó una captura, esa
+captura es suya y Deily no la puede borrar.</p>
+
+<h2>El Asistente</h2>
+<p>El Asistente es opcional. Las cuentas nuevas tienen unas consultas de
+bienvenida. Después, las consultas de pago vienen con Deily Pro o con el
+complemento del asistente si ya tienes Lifetime. Antes de usarlo, eliges qué
+áreas de tu cuaderno puede ver en esa pregunta (por ejemplo finanzas, hábitos o
+notas concretas). No se envía tu base entera.</p>
+<ul>
+  <li><strong>Qué viaja.</strong> Tu pregunta, el idioma, y un resumen compacto
+  de las áreas que marcaste. Juntos, las notas compartidas, los dibujos y los
+  PDF no se incluyen.</li>
+  <li><strong>A dónde va.</strong> Viaja cifrada (HTTPS) a nuestro servidor, en
+  Supabase, y de ahí a Alibaba Cloud (Model Studio / DashScope, modelos Qwen),
+  que la trata fuera de Costa Rica. Se envía sólo para responderte.</li>
+  <li><strong>Qué se guarda.</strong> El historial de esa conversación en tu
+  cuenta, para que puedas volver a leerlo o borrarlo. Cada envío va marcado para
+  que Alibaba Cloud no lo archive; lo que conserve para operar su servicio se
+  rige por sus condiciones y por los ajustes de retención de la cuenta de Deily
+  en Alibaba Cloud.</li>
+  <li><strong>Para qué no se usa.</strong> No se usa tu contenido para entrenar
+  modelos, ni para publicidad, ni para analítica.</li>
+</ul>
+<p>El Asistente puede equivocarse. No es consejo médico, nutricional, financiero
+ni académico.</p>
+
+<h2>Avisos, widgets y pantalla de bloqueo</h2>
+<p>Los avisos (tareas, pomodoro, mascota y similares) los prepara tu teléfono.
+No pasan por un servidor de notificaciones de Deily. Si el teléfono está
+bloqueado, el título y el texto del aviso pueden verse en la pantalla de bloqueo
+y en un reloj conectado, salvo que ocultes el contenido de las notificaciones en
+los ajustes del sistema. Los widgets de la pantalla de inicio, y el panel
+opcional de la pantalla de bloqueo, muestran resúmenes que tú activas (tareas,
+hábitos, mascota, comida, gasto, agenda o Juntos). Quien tenga el teléfono
+desbloqueado, o vea la pantalla de bloqueo si dejaste ese panel encendido, puede
+ver lo que ahí aparece.</p>
+
+<h2>Dónde se guarda y quién lo procesa</h2>
+<p>Deily usa estos proveedores sólo para que la aplicación funcione. Ninguno
+recibe tus datos para publicidad ni para entrenar sus modelos con tu
+contenido:</p>
+<ul>
+  <li><strong>Supabase</strong> aloja la base de datos, el inicio de sesión y
+  las funciones del servidor, fuera de Costa Rica. Los datos viajan cifrados
+  (HTTPS) y se guardan cifrados, pero no de extremo a extremo: quien administra
+  el servidor podría técnicamente leerlos. Las reglas de acceso por fila las
+  aplica el servidor: cada cuenta sólo puede escribir lo suyo, y sólo puede leer
+  lo suyo y lo que otra persona le haya decidido compartir en Juntos.</li>
+  <li><strong>Google</strong> gestiona la entrada con Google. Si compras en
+  Android, el cobro lo hace <strong>Google Play</strong>. En iOS, cuando esté
+  disponible, el cobro lo hace el <strong>App Store</strong>. Deily no ve ni
+  guarda datos de tu tarjeta.</li>
+  <li><strong>RevenueCat</strong> gestiona las compras. Recibe un identificador
+  interno de tu cuenta, que no es tu correo ni tu nombre, y la información de la
+  compra que le pasa la tienda.</li>
+  <li><strong>Alibaba Cloud</strong> responde al Asistente, como se explicó
+  arriba.</li>
+  <li><strong>Open Food Facts</strong> y los catálogos públicos de Walmart Costa
+  Rica (incluidos Palí, Maxi Palí y Más x Menos) reciben el número del código de
+  barras, sin tu cuenta, para identificar el producto.</li>
+</ul>
+<p><strong>Fuera de Costa Rica.</strong> Estos proveedores tratan datos en
+servidores que están fuera de Costa Rica, así que lo que se sincroniza o se
+envía al Asistente sale del país.</p>
 
 <h2>Lo que Deily no hace</h2>
 <ul>
   <li>No hay publicidad, ni identificador de publicidad, ni rastreadores.</li>
   <li>No hay analítica de uso ni telemetría de ningún tipo.</li>
-  <li>No se venden, alquilan ni comparten tus datos con terceros.</li>
-  <li>No se usa tu contenido para entrenar modelos de inteligencia artificial.</li>
+  <li>No se venden ni se alquilan tus datos, y no se comparten con terceros para
+  sus propios fines: sólo pasan por los proveedores de la sección anterior, para
+  que la aplicación funcione, y llegan a la persona de Juntos sólo en lo que tú
+  eliges.</li>
+  <li>No se usa tu contenido para entrenar modelos de inteligencia
+  artificial.</li>
 </ul>
 
-<h2>Si algún día hay pagos</h2>
-<p>La versión de pago, cuando exista, se cobra a través de Google Play y se
-gestiona con RevenueCat, que sólo recibe un identificador de compra. Deily no ve
-ni guarda datos de tu tarjeta en ningún momento.</p>
-
-<h2>Cuánto tiempo se guardan</h2>
-<p>Lo que anotas se guarda mientras tengas la cuenta abierta. Cuando pides
-borrarlo, se borra del servidor en el momento, no se archiva ni se conserva una
-copia.</p>
-
-<h2>Tus derechos, y cómo ejercerlos sin pedir permiso</h2>
+<h2>Cuánto tiempo se guardan y cómo se borran</h2>
 <ul>
-  <li><strong>Ver lo tuyo:</strong> está todo dentro de la aplicación.</li>
-  <li><strong>Borrarlo todo:</strong> Ajustes → Borrar todo. Borra tu contenido
-  del servidor y del teléfono. No se puede deshacer.</li>
-  <li><strong>Salir sin borrar:</strong> Ajustes → Cerrar sesión. Lo tuyo queda
-  en el servidor y vuelve cuando entres otra vez con la misma cuenta.</li>
-  <li><strong>Borrar la cuenta entera:</strong> escribe al correo de arriba y se
-  elimina, con todo lo que tenga dentro.</li>
+  <li><strong>Lo que está en el servidor</strong> se guarda mientras tengas la
+  cuenta. Cuando pides borrarlo, se borra del servidor; no se archiva una copia
+  aparte para Deily.</li>
+  <li><strong>Lo que compartes en Juntos</strong> se guarda sólo mientras está
+  encendido, y se borra del servidor al apagarlo o al cortar el vínculo.</li>
+  <li><strong>Las conversaciones con el Asistente</strong> se guardan en tu
+  cuenta, y puedes borrar cada una cuando quieras dentro de la aplicación.</li>
+  <li><strong>Borrar el contenido:</strong> Ajustes → Borrar todo. Borra lo que
+  anotaste en el servidor y en este teléfono. Las compras en la tienda y el
+  recuento de consultas del asistente ya utilizadas se conservan, porque los
+  gestiona la tienda y el servidor de cuotas, no el cuaderno.</li>
+  <li><strong>Borrar la cuenta entera:</strong> pide el borrado en
+  <a href="https://apporganizacion.github.io/deily-legal/borrar.html">esta
+  página</a> o escribe a
+  <a href="mailto:app.organizacion123@gmail.com">app.organizacion123@gmail.com</a>
+  desde el correo de la cuenta. Se elimina la cuenta y el contenido asociado. El
+  historial de compras sigue existiendo en Google Play o en el App Store, que
+  son quienes lo cobran.</li>
 </ul>
+
+<h2>Tus derechos</h2>
+<p>Tienes derecho a ver tus datos, a corregirlos y a borrarlos. Casi todo se
+hace desde la aplicación:</p>
+<ul>
+  <li><strong>Ver y corregir lo tuyo:</strong> está dentro de la
+  aplicación.</li>
+  <li><strong>Dejar de compartir:</strong> en Juntos → Lo que compartimos, o
+  cortando el vínculo.</li>
+  <li><strong>Salir sin borrar:</strong> Ajustes → Cerrar sesión. Lo
+  sincronizado queda en el servidor y vuelve al entrar con la misma cuenta. Lo
+  que vive sólo en el teléfono (PDF, preferencias locales) se queda o se pierde
+  según el aparato.</li>
+  <li><strong>Borrar contenido o la cuenta:</strong> como en la sección
+  anterior. También hay un atajo en Ajustes.</li>
+</ul>
+
+<h2>Solicitudes de autoridades</h2>
+<p>Deily sólo entrega datos personales a una autoridad cuando lo exige una orden
+fundamentada, dictada por una autoridad judicial competente, como establece el
+artículo 5.2.a de la Ley 8968 de Costa Rica.</p>
+
+<h2>Deily no es un dispositivo médico</h2>
+<p>Deily no es un dispositivo médico y no diagnostica, trata, cura ni previene
+ninguna condición médica. Lo que anotas de comida, agua o ejercicio, y lo que
+responde el Asistente, son tus apuntes o estimaciones: no son consejo médico ni
+nutricional. Ante cualquier duda sobre tu salud, consulta a un profesional.</p>
 
 <h2>Menores</h2>
 <p>Deily no está dirigida a menores de 13 años y no recoge datos de forma
@@ -109,8 +249,9 @@ antes de aplicarlo.</p>
 
 <footer>
   <a href="index.html">Inicio</a> ·
+  <a href="privacidad.html">Política de privacidad</a> ·
   <a href="terminos.html">Condiciones del servicio</a> ·
-  <a href="mailto:app.organizacion123@gmail.com">Contacto</a>
+  <a href="borrar.html">Borrar la cuenta</a>
 </footer>
 </body>
 </html>
